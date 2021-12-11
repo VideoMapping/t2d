@@ -404,7 +404,7 @@ function funForem()
     echo "${YELLOW}Making Forem Production Ready...${END}"
     dokku config:set nforem --no-restart NODE_ENV=production RACK_ENV=production RACK_ENV=production SECRET_KEY_BASE=63e667bd35d7f7045e00de11cf9e115e67a560fac03a6be056c3e4e07bd6b7c974bee249c29abd794ab18c9bf661bce861945dafa31275f409ca0a82a3cae0ab
     wait 
-    echo "${YELLOW}Setting up VJ UNION ENV Variables${END}"
+    echo "${GREEN}Setting up VJ UNION ENV Variables${END}"
     dokku config:set nforem --no-restart DEFAULT_EMAIL=yo@vjun.io CLOUDINARY_API_KEY=237439771513994 CLOUDINARY_API_SECRET=0IRg5g2QD5ZQInGEWHt2Wqdo9CY CLOUDINARY_CLOUD_NAME=dokmtdzkb CLOUDINARY_SECURE=true 
     wait
     echo "${YELLOW}Initializing git${END}"
